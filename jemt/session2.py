@@ -1,7 +1,3 @@
-#def main():
-#  pass
-
-
 def getting_data():
   '''Downloads the elevator status for grand central station 
   and gives the fraction of elevators that are down due to repair.
@@ -15,8 +11,3 @@ def getting_data():
     if outage.reason.cdata == 'REPAIR':
       repair_count += 1
   return Fraction(repair_count, len(outages))
-
-
-#if __name__ == "__main__":
-    #main()
-        

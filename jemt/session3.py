@@ -49,11 +49,12 @@ class CourseRepo(object):
     #checks if the dir and files in self.required exists in current path
     check = 'PASS'
     print '\n'
-    for dir in self.required:
-      if not os.path.exists(dir):
-        print dir ,"NOT IN:", os.getcwd() 
+    for directory in self.required:
+      if not os.path.exists(directory):
+        print directory ,"NOT IN:", os.getcwd() 
         check = 'FAIL'
-    print check  
+    print check
+    print '\n'  
     
       
         
